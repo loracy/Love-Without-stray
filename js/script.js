@@ -6,4 +6,7 @@ $(function(){
 	$('.social-icon img').mouseleave(function(){
 		$(this).css("background-color","unset");
 		});
+	$('.btn').click(function(){
+        window.location.href='facebook.com';
+	});
 });
