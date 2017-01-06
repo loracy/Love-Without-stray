@@ -68,7 +68,7 @@ header a {
 /*-------------steps-------------------*/
 .container{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
 .steps-title{
     margin-top: 50px;
@@ -89,7 +89,7 @@ header a {
 }
 /*-------------footer-------------------*/
 footer{
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     background-color: #dedacf;
 }
