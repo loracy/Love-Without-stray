@@ -1,0 +1,46 @@
+.container{
+	margin-top: 110px;
+}
+.container img{
+	width: 100%;
+	cursor: pointer;
+}
+.breadcrumb{
+	background-color: unset;
+    text-align: left;
+}
+.breadcrumb li a{
+    font-size: 1em;
+}
+.breadcrumb li{
+    font-size: 1.6em;
+}
+
+.selgroup{
+	height: 4em;
+	background-color: #dedacf;
+	border-radius: 20px;
+}
+.selgroup .control-group .control-label{
+	font-size: 2em;
+}
+.selgroup .control-group select{
+	font-size: 2em;
+}
+.selgroup .control-group option{
+	font-size: 0.8em;
+}
+table{
+	margin-top: 6px;
+}
+
+input{
+	font-size: 1.8em;
+	border-radius: 5px;
+	background-color: #f0ede6;
+
+
+}
+.animals-list{
+	margin-top: 100px;
+}

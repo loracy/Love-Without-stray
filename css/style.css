@@ -19,6 +19,13 @@ body{
 .font-size-30{
     font-size: 3em;
 }
+.icon-down{
+    text-align: center;
+}
+.glyphicon-chevron-down{
+    font-size: 3em;
+    cursor: pointer;
+}
 /*-------------header-----------------*/
 .navbar{
     margin-bottom: 0px;
@@ -117,6 +124,9 @@ header a {
 .step{
     float: left;
     text-align: center;
+}
+.step img{
+    cursor: pointer;
 }
 .step p {
     margin-top: 20px;

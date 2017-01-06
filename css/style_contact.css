@@ -1,0 +1,29 @@
+.container{
+	margin-top: 140px;
+}
+.contact-info-1{
+	text-align: left;
+}
+#name{
+	font-size: 3em;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#info_title{
+	font-size: 1.6em;
+	margin-bottom: 30px;
+}
+.info_content{
+    font-size: 1.6em;
+}
+.contact-map-2{
+	margin-top: 80px;
+}
+.contact-info-2{
+	text-align: right;
+	margin-top: -440px;
+}
+.icon-down{
+	margin-top: 50px;
+	/*margin-bottom: 20px;*/
+}

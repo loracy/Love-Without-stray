@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/style_adopt.css">
+<script src="js/script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<title>認養代替購買</title>
+</head>
+<body>
+  <header class="navbar-fixed-top container-fluid">
+    
+    <nav class="navbar navbar-default">  
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <a class="col-md-1 logo" href="index.html"><img src="img/logo.png"/></a>
+        <ul class="nav navbar-nav navbar-left col-md-5">
+          
+          <li><a style="border-bottom: #a6836f 5px solid;color: #a6836f;" href="#我想認養">我想認養</a></li>
+          <li><a href="#認養須知">認養須知</a></li>
+          <li><a href="example.html">成功案例</a></li>
+          <li><a href="#關於我們">關於我們</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#註冊">註冊</a></li>
+          <li><a href="#登入">登入</a></li>
+          <li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>
+
+        </ul>
+        </div>
+    </nav>
+    </div>
+  </header>
+  
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="adopt.html">我要領養</a></li>
+      <li class="active">領養狗狗</li>
+    </ol>
+      <div class="col-md-12 selgroup">
+        <table width="60%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <div class="control-group">
+                <label class="control-label">區域</label>
+                  <select name="s_area" tabindex="28" class="a_area_ky_detail span12">
+                    <option value="ALL">全部</option><option value='2' >臺北市</option><option value='3' >新北市</option><option value='4' >基隆市</option><option value='5' >宜蘭縣</option><option value='6' >桃園市</option><option value='8' >新竹市</option><option value='10' >臺中市</option><option value='11' >彰化縣</option><option value='12' >南投縣</option></select>
+              </div>
+            </td>
+            <td>
+              <div class="control-group">
+                <label class="control-label" >年紀</label>
+                  <select tabindex="31" name="s_color" class="span12">
+                    <option value="ALL" selected>全部</option><option value='CHILD' >幼年</option><option value='ADULT' >成年</option></select>
+                      <input type="hidden" class="hidden_age" value="" />
+            </td>            
+            <td>
+              <div class="control-group">
+                <label class="control-label" >性別</label>
+                  <select tabindex="33" name="s_sex" class="span12">
+                    <option value="ALL" selected>全部</option><option value='M' >公</option><option value='F' >母</option><option value='N' >未知</option></select>
+              </div>
+            </td>
+            <td>
+              <div class="control-group">
+                <label class="control-label" >體型</label>
+                  <select tabindex="30" name="s_bodytype" class="a_bodytype_ky_detail span12">
+                    <option value="ALL" >全部</option><option value='MINI' selected="selected">迷你型</option><option value='SMALL' >小型</option><option value='MEDIUM' >中型</option><option value='BIG' >大型</option></select>
+              </div>
+            </td>
+            <td>
+              <div class="control-group btn-find">
+                <input type="hidden" name="num" value="8" />
+                  <input type="submit" tabindex="34" class="button button-rounded button-flat-primary" value="尋找" alt="依照搜尋條件尋找符合之待領養動物" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div><!-- selgroup -->
+
+    <div class="animals-list">
+      <div class="col-md-3">
+        <a href="adopt_dog_info.html"><img src="img/dog-1.jpg"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="adopt_dog_info.html"><img src="img/dog-1.jpg"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="adopt_dog_info.html"><img src="img/dog-1.jpg"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="adopt_dog_info.html"><img src="img/dog-1.jpg"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container-fluid">
+    <div class=""><a href="index.html">
+      <img class="col-md-1" src="img/logo.png"/></a> 
+    </div>
+    <div class="site-map">
+      <div class="site-map-content col-md-1">
+        <p><a class="font-size-16" href="#我要認養">我要認養</a></p>
+        <ul>
+          <li><a href="#認養貓咪">認養貓咪</a></li>
+          <li><a href="#認養狗狗">認養狗狗</a></li>
+        </ul>
+      </div> <!-- site-map-1 我要認養-->
+      <div class="site-map-content col-md-1">
+        <p><a class="font-size-16" href="#認養須知">認養須知</a></p>
+        <ul>
+          <li><a href="#認養前">認養前</a></li>
+          <li><a href="#認養後">認養後</a></li>
+        </ul>
+      </div> <!-- site-map-2 認養須知-->
+      <div class="site-map-content col-md-1">
+        <p><a class="font-size-16" href="example.html">成功案例</a></p>
+      </div> <!-- site-map-3 成功案例-->
+      <div class="site-map-content col-md-1">
+        <p><a class="font-size-16" href="#關於我們">關於我們</a></p>
+        <ul>
+          <li><a href="#心路歷程">心路歷程</a></li>
+          <li><a href="#幫助我們">幫助我們</a></li>
+        </ul>
+      </div> <!-- site-map-4 關於我們-->
+      <div class="site-map-content col-md-1">
+        <p><a class="font-size-16" href="#會員專區">會員專區</a></p>
+        <ul>
+          <li><a href="#註冊會員">註冊會員</a></li>
+          <li><a href="#我要刊登">我要刊登</a></li>
+        </ul>
+      </div> <!-- site-map-5 會員專區-->
+      <div class="site-map-content col-md-1">
+        <p><a class="font-size-16" href="contact.html">聯絡我們</a></p>
+      </div> <!-- site-map-6 聯絡我們-->
+    </div> <!-- site-map -->
+    <div class="text-right">
+      <div class="social-icon">
+        <a class="social-icon-link social-icon-link-margin" href="#facebook"><img src="img/icon-fb.svg"/></a>
+        <a class="social-icon-link social-icon-link-margin" href="#instagram"><img src="img/icon-ig.svg"/></a>
+        <a class="social-icon-link" href="#google-map"><img src="img/icon-gmap.svg"/></a>      
+      </div> <!-- social-icon -->
+      <p>Copyright © ooooo. All Rights Reserved.</p>
+    </div> <!-- text-right --> 
+
+    
+  </footer>
+
+
+  <script src="js/bootstrap.min.js"></script>     
+  
+  
+</body>
+</html>
