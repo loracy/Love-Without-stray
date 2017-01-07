@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/style_adopt.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 <script src="js/script.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <title>認養代替購買</title>
@@ -20,10 +21,10 @@
         <a class="col-md-1 logo" href="index.html"><img src="img/logo.png"/></a>
         <ul class="nav navbar-nav navbar-left col-md-5">
           
-          <li><a style="border-bottom: #a6836f 5px solid;color: #a6836f;" href="#我想認養">我想認養</a></li>
-          <li><a href="#認養須知">認養須知</a></li>
+          <li><a style="border-bottom: #a6836f 5px solid;color: #a6836f;" href="adopt.html">我想認養</a></li>
+          <li><a href="#">認養須知</a></li>
           <li><a href="example.html">成功案例</a></li>
-          <li><a href="#關於我們">關於我們</a></li>
+          <li><a href="about.html">關於我們</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -41,7 +42,7 @@
     <ol class="breadcrumb">
       <li><a href="adopt.html">我要領養</a></li>
       <li class="active">領養貓咪</li>
-    </ol>
+    </ol> <!-- breadcrumb -->
       <div class="col-md-12 selgroup">
         <table width="60%" cellpadding="0" cellspacing="0">
           <tr>
@@ -70,7 +71,7 @@
               <div class="control-group">
                 <label class="control-label" >體型</label>
                   <select tabindex="30" name="s_bodytype" class="a_bodytype_ky_detail span12">
-                    <option value="ALL" >全部</option><option value='MINI' selected="selected">迷你型</option><option value='SMALL' >小型</option><option value='MEDIUM' >中型</option><option value='BIG' >大型</option></select>
+                    <option value="ALL" >全部</option><option value='SMALL' >小型</option><option value='BIG' >大型</option></select>
               </div>
             </td>
             <td>
@@ -83,21 +84,71 @@
         </table>
       </div><!-- selgroup -->
 
+<!-- slideInDown flipInX pulse swing animated infinite -->
     <div class="animals-list">
-      <div class="col-md-3">
-        <a href="adopt_cat_info.html"><img src="img/dog-1.jpg"></a>
+    <!-- column-1 -->
+      <div class="animals-list-column-1 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite infinite" src="img/cat-1.png"></a>
+        
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>台北市 / 幼年 / 公 / 小型</p>
       </div>
-      <div class="col-md-3">
-        <a href="adopt_cat_info.html"><img src="img/dog-1.jpg"></a>
+      <div class="animals-list-column-1 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-2.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>台中市 / 幼年 / 公 / 小型</p>
       </div>
-      <div class="col-md-3">
-        <a href="adopt_cat_info.html"><img src="img/dog-1.jpg"></a>
+      <div class="animals-list-column-1 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-3.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>新竹市 / 幼年 / 母 / 巨大型</p>
       </div>
-      <div class="col-md-3">
-        <a href="adopt_cat_info.html"><img src="img/dog-1.jpg"></a>
+      <div class="animals-list-column-1 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-4.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>新北市 / 幼年 / 公 / 大型</p>
+      </div>
+      <!-- column-2 -->
+      <div class="animals-list-column-2 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-5.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>台北市 / 幼年 / 公 / 小型</p>
+      </div>
+      <div class="animals-list-column-2 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-6.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>台北市 / 成年 / 母 / 大型</p>
+      </div>
+      <div class="animals-list-column-2 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-7.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>宜蘭市 / 幼年 / 母 / 小型</p>
+      </div>
+      <div class="animals-list-column-2 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-8.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>新北市 / 幼年 / 公 / 小型</p>
+      </div>
+      <!-- column-3 -->
+      <div class="animals-list-column-3 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-9.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>台中市 / 未知 / 未知 / 大型</p>
+      </div>
+      <div class="animals-list-column-3 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-10.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>基隆市 / 未知 / 未知 / 大型</p>
+      </div>
+      <div class="animals-list-column-3 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-11.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>新竹市 / 幼年 / 母 / 小型</p>
+      </div>
+      <div class="animals-list-column-3 col-md-3">
+        <a href="adopt_cat_info.html"><img class="pulse infinite" src="img/cat-12.png"></a>
+        <p class="flipInX animated"><img class="icon-cat-list" src="img/icon-cat-list.png"/>台北市 / 幼年 / 公 / 小型</p>
       </div>
     </div>
   </div>
+  <nav class="page-list">
+  <ul class="pagination pagination-lg">
+    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+  </ul>
+</nav><!-- page-list -->
 
 
   <footer class="container-fluid">
@@ -106,10 +157,10 @@
     </div>
     <div class="site-map">
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="#我要認養">我要認養</a></p>
+        <p><a class="font-size-16" href="adopt.html">我要認養</a></p>
         <ul>
-          <li><a href="#認養貓咪">認養貓咪</a></li>
-          <li><a href="#認養狗狗">認養狗狗</a></li>
+          <li><a href="adopt_cat.html">認養貓咪</a></li>
+          <li><a href="adopt_dog.html">認養狗狗</a></li>
         </ul>
       </div> <!-- site-map-1 我要認養-->
       <div class="site-map-content col-md-1">
@@ -123,7 +174,7 @@
         <p><a class="font-size-16" href="example.html">成功案例</a></p>
       </div> <!-- site-map-3 成功案例-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="#關於我們">關於我們</a></p>
+        <p><a class="font-size-16" href="about.html">關於我們</a></p>
         <ul>
           <li><a href="#心路歷程">心路歷程</a></li>
           <li><a href="#幫助我們">幫助我們</a></li>

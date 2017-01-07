@@ -45,5 +45,11 @@ $(function(){
 	$('.cat').click(function(){
 		window.location.href='adopt_cat.html';
 	});
-
+//--------------adopt_dog_list---------------
+    $('.pulse').mouseenter(function(){
+        $(this).addClass("animated");
+    });
+    $('.pulse').mouseleave(function(){
+        $(this).removeClass("animated");
+    });
 });

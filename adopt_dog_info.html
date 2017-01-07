@@ -13,6 +13,24 @@
 <title>認養代替購買</title>
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1713871365593572',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
   <header class="navbar-fixed-top container-fluid">
     
     <nav class="navbar navbar-default">  
@@ -42,7 +60,29 @@
       <li><a href="adopt.html">我要領養</a></li>
       <li><a href="adopt_dog.html">領養狗狗</a></li>
       <li class="active">狗狗的資訊</li>
-    </ol>
+    </ol><!-- breadcrumb -->
+    <div class="dog-info-title col-md-1">
+      <p>流</p><p>浪</p><p>狗</p><p>狗</p><p>的</p><p>資</p><p>訊</p>
+    </div>
+    <div class="dog-info-img col-md-4">
+      <img src="img/dog-4.png">
+    </div>
+    <div class="dog-info-content col-md-4">
+      <span>地點:</span>新北市<br>
+      <span>年齡:</span>幼年 <br>
+      <span>性別:</span>公 <br>
+      <span>體型:</span>小型<br>
+      <span>其他:</span>狗狗已經結紮了，平時很乖很聽話，不會亂叫也很溫順，因為家裡要搬去新公寓，規定不能養寵物，沒辦法只好忍痛跟他分開，希望愛心人士願意收養牠，給他一個新的家<br>
+      <br>
+      <span>聯絡資訊:</span> 0988-888-777 林小姐
+      <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+    </div>
       
   </div>
 
