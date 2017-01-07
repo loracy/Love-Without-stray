@@ -52,4 +52,8 @@ $(function(){
     $('.pulse').mouseleave(function(){
         $(this).removeClass("animated");
     });
+//--------------adopt_info_else-------
+    $('.else-list-marquee img').click(function(){
+    	window.location.href='adopt_dog_info.html';
+    });
 });

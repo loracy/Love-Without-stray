@@ -5,12 +5,18 @@
 	width: 100%;
 	cursor: pointer;
 }
+.info-container{
+	margin-top: 140px;
+    margin-bottom: 80px;
+    padding-left: 40px;
+}
 .breadcrumb{
 	background-color: unset;
     text-align: left;
 }
 .breadcrumb li a{
     font-size: 1em;
+    color: #a6836f;
 }
 .breadcrumb li{
     font-size: 1.6em;
@@ -85,7 +91,8 @@ input{
 	background-color: #a6836f;
 	color: #e7e2e2;
 }
-.dog-info-title{
+
+.info-title{
 	width: 3%;
     background-color: #dedacf;
     border-radius: 20px;
@@ -94,22 +101,34 @@ input{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.dog-info-title p{
+.info-title p{
 	font-size: 2em;
 	color: #777;
 	margin-bottom: 0px;
 }
-.dog-info-content{
+.info-content{
 	font-size: 1.6em;
 	text-align: left;
 	color: #777;
 	/*line-height:3em; */
 }
-.dog-info-content span{
+.info-content span{
 	color: #a6836f;
 	font-size: 1em;
 	margin-right: 10px;
 	line-height: 2.5em;
 	/*margin-bottom: 20px;*/
 }
+#info-content-setting-line-height{
+	line-height: 3.3em;
+}
+
+.else-list-marquee{
+	font-size: 1.4em;
+}
+.else-list-marquee img{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
 

@@ -13,6 +13,24 @@
 <title>認養代替購買</title>
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1713871365593572',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
   <header class="navbar-fixed-top container-fluid">
     
     <nav class="navbar navbar-default">  
@@ -37,14 +55,43 @@
     </div>
   </header>
   
-  <div class="container">
+  <div class="container info-container">
     <ol class="breadcrumb">
       <li><a href="adopt.html">我要領養</a></li>
       <li><a href="adopt_cat.html">領養貓咪</a></li>
       <li class="active">貓咪的資訊</li>
-    </ol>
+    </ol><!-- breadcrumb -->
+    <div class="info-title col-md-1">
+      <p>流</p><p>浪</p><p>貓</p><p>咪</p><p>的</p><p>資</p><p>訊</p>
+    </div><!-- cat-info-title -->
+    <div class="info-img col-md-4">
+      <img src="img/cat-3.png">
+    </div><!-- cat-info-img -->
+    <div class="info-content col-md-4">
+      <span>地點:</span>新竹市<br>
+      <span>年齡:</span>幼年 <br>
+      <span>性別:</span>母 <br>
+      <span>體型:</span>巨大型<br>
+      <span>其他:</span>之前在路邊看到的貓咪，覺得很可愛又很可憐就先帶回家，沒想到她平時都很聽話，但是有時候會亂咬人，我受不了了，希望有好心人士願意替我好好照顧他，會非常感激你的<br>
       
-  </div>
+      <span id="info-content-setting-line-height">聯絡資訊:</span> 0922-111-555 陳小姐
+      <div class="fb-like" data-share="true" data-width="450" data-show-faces="false"></div><!-- fb sharing&like -->
+  
+    </div> <!-- cat-info-content -->
+    <div class="info-title col-md-1 col-md-offset-1">
+      <p>其</p><p>他</p><p>待</p><p>認</p><p>養</p><p>的</p><p>貓</p><p>咪</p>
+    </div><!-- cat-info-title2 -->
+
+    <div class="else-list col-md-2">
+      <marquee class="else-list-marquee" behavior="alternate" direction="up" scrollamount="3" height="350px" onMouseOver="this.stop()" onMouseOut="this.start()">
+        <img src="img/cat-1.png">台北市 / 幼年 / 母 / 大型<img src="img/cat-2.png">台中市 / 幼年 / 公 / 大型<img src="img/cat-4.png">基隆市 / 幼年 / 母 / 小型<img src="img/cat-5.png">台北市 / 成年 / 母 / 小型<img src="img/cat-6.png">新竹市 / 成年 / 母 / 大型<img src="img/cat-7.png">宜蘭市 / 幼年 / 母 / 小型<img src="img/cat-8.png">新北市 / 幼年 / 公 / 中型<img src="img/cat-9.png">台北市 / 幼年 / 公 / 小型<img src="img/cat-10.png">台北市 / 幼年 / 公 / 大型<img src="img/cat-11.png">新北市 / 幼年 / 母 / 大型<img src="img/cat-12.png">台中市 / 成年 / 母 / 大型
+      </div>
+      </marquee>
+  
+
+    </div><!-- else-cat-list -->
+      
+  </div><!-- container -->
 
 
   <footer class="container-fluid">
@@ -56,7 +103,7 @@
         <p><a class="font-size-16" href="adopt.html">我要認養</a></p>
         <ul>
           <li><a href="adopt_cat.html">認養貓咪</a></li>
-          <li><a href="adopt_dog.html">認養狗狗</a></li>
+          <li><a href="adopt_cat.html">認養狗狗</a></li>
         </ul>
       </div> <!-- site-map-1 我要認養-->
       <div class="site-map-content col-md-1">
