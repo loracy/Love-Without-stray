@@ -5,6 +5,9 @@
 	width: 100%;
 	cursor: pointer;
 }
+.dog a{
+	/*height: 540px;*/
+}
 .info-container{
 	margin-top: 140px;
     margin-bottom: 80px;
