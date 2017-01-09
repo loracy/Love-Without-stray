@@ -7,11 +7,19 @@ body{
     background-color: #f0ede6;
 }
 
-.section1, .section2 {
+.section1, .section2{
   position: relative;
   height: 100vh;
   padding-top: 100px;
   box-sizing: border-box;
+}
+
+.section3 {
+	position: relative;
+	height: 70vh;
+	padding-top: 100px;
+	box-sizing: border-box;
+	line-height: 50vh;
 }
 
 .example1_content {
@@ -23,6 +31,7 @@ body{
 }
 
 .title {
+	font-size: 4em;
   padding: 20px;
   padding-left: 0px;
   padding-right: 0px;
@@ -30,16 +39,15 @@ body{
 }
 
 .type {
+	font-size: 2em;
   padding: 10px;
+	line-height: 2em;
 }
 
 .content2 {
-  padding: 10px;
-  padding-top: 0px;
-}
-
-.content2 h4{
-  line-height: 25px;
+	font-size: 1.5em;
+	line-height: 2em;
+	padding: 10px;
 }
 
 .section2 {
@@ -56,6 +64,7 @@ body{
 
 .page-botton{
   position: absolute;
+	left:0;
   bottom: 0;
 }
 
@@ -63,4 +72,29 @@ body{
 .glyphicon-chevron-down {
   font-size: 5em;
   color: rgb(122, 122, 122);
+}
+
+/*Metrial-Design change*/
+a {
+   font-weight: bold;
+}
+
+p {
+   font-size: 10px;
+  	line-height: inherit;
+}
+
+ul, ol {
+     line-height: inherit;
+}
+
+.mdl-button {
+	height: 100px;
+	min-width: 200px;
+	font-size: 3em;
+	border-radius: 50px;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    background-color: #f15a24;
 }
