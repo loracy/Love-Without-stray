@@ -26,12 +26,12 @@ $(function(){
 		}, 600);
 	});
 // -------------adopt_dog---------------------
-    $('.dog').mouseenter(function(){
-		$(this).html('<img src="img/dog_hover.jpg">');
-	});
-	$('.dog').mouseleave(function(){
-    	$(this).html('<img src="img/dog.jpg">');
-	});
+  //   $('.dog').mouseenter(function(){
+	// 	$(this).html('<img src="img/dog_hover.jpg">');
+	// });
+	// $('.dog').mouseleave(function(){
+  //   	$(this).html('<img src="img/dog.jpg">');
+	// });
 	$('.dog').click(function(){
 		window.location.href='adopt_dog.html';
 	});
