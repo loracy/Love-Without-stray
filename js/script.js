@@ -20,7 +20,7 @@ $(function(){
 	});
 //------------scroll-down----------------------
 	$('.glyphicon-chevron-down').click(function(){
-		// window.scrollTo(0,800);
+		// window.scrollTop(0,800);
 		$('body').animate({
 			scrollTop: 625
 		}, 600);
