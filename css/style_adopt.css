@@ -3,8 +3,7 @@
 }
 
 .container img{
-	position: relative;
-	width: 350px;
+	width: 90%;
 	cursor: pointer;
 	opacity: 0.8;
 }
