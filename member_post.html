@@ -6,10 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css">
+
 <link type="text/css" rel="stylesheet" href="css/style.css">
-<link type="text/css" rel="stylesheet" href="css/style_adopt.css">
+<link type="text/css" rel="stylesheet" href="css/style_member.css">
+
 <script src="js/script.js"></script>
+<script src="js/script_member.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
 <title>認養代替購買</title>
 </head>
 <body>
@@ -20,15 +26,15 @@
         <a class="col-md-1 logo" href="index.html"><img src="img/logo.png"/></a>
         <ul class="nav navbar-nav navbar-left col-md-5">
           
-          <li><a style="border-bottom: #a6836f 5px solid;color: #a6836f;" href="adopt.html">我想認養</a></li>
+          <li><a href="adopt.html">我想認養</a></li>
           <li><a href="#認養須知">認養須知</a></li>
           <li><a href="example.html">成功案例</a></li>
-          <li><a href="#關於我們">關於我們</a></li>
+          <li><a href="about.html">關於我們</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="member.html">註冊</a></li>
-          <li><a href="member.html">登入</a></li>
+          <li><a href="member_post.html">我想刊登</a></li>
+          <li><a href="member.html">登出</a></li>
           <li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>
 
         </ul>
@@ -38,14 +44,56 @@
   </header>
   
   <div class="container">
-    <div class="col-md-6 dog">
-        <img src="img/dog.jpg">
-    </div>
-    <div class="col-md-6 cat">
-        <img src="img/cat.jpg">
-    </div>
-  </div>
 
+    <ol class="breadcrumb">
+      <li><a href="member.html">會員專區</a></li>
+      <li class="active">我要刊登</li>
+    </ol> <!-- breadcrumb -->
+    <div class="member-post">
+      <div class="profile col-md-2 col-md-offset-1 member-card-style">
+        <div class="profile-title title">
+          <p class="font-size-20">個人資料</p>
+        </div> <!-- profile-title -->
+        <div class="profile-content">
+          <p class="font-size-16">你的名字</p>
+          <p class="font-size-16">你的信箱</p>
+          <button type="" class="edit-btn member-btn-style">
+              編輯
+          </button>
+        </div> <!-- profile-content -->
+      </div> <!--- profile -->
+      <div class="post col-md-8 member-card-style">
+        <div class="post-title title">
+          <p class="font-size-20">你刊登的動物照片/資訊</p>
+        </div> <!-- post-title -->
+        <div class="post-content col-md-12">
+          <div class="post-1 col-md-3">
+            <img style="width: 100%;" src="img/dog-1.png"/>
+            <div class="post-content-checkbox checkbox-style">
+              <input type="checkbox" name="remember"> 2016 / 12 / 25<br>
+            </div> 
+          </div> <!--post-1-->
+          <div class="post-2 col-md-3">
+            <img style="width: 100%;" src="img/dog-2.png"/>
+            <div class="post-content-checkbox checkbox-style">
+              <input type="checkbox" name="remember"> 2017 / 01 / 05<br>
+            </div> 
+          </div> <!--post-2--> 
+        </div><!-- post-content -->
+        <div class="post-btn text-right">
+          <button type="" class="delete-btn member-btn-style">
+              刪除
+          </button>
+          <button type="" class="upload-btn member-btn-style">
+              新增
+          </button> 
+        </div><!-- post-btn -->
+      </div> <!-- post -->
+    </div> <!--- member-post-->
+    
+    
+   
+ </div> <!--container-->
 
   <footer class="container-fluid">
     <div class=""><a href="index.html">
@@ -70,7 +118,7 @@
         <p><a class="font-size-16" href="example.html">成功案例</a></p>
       </div> <!-- site-map-3 成功案例-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="#關於我們">關於我們</a></p>
+        <p><a class="font-size-16" href="about.html">關於我們</a></p>
         <ul>
           <li><a href="#心路歷程">心路歷程</a></li>
           <li><a href="#幫助我們">幫助我們</a></li>
@@ -80,7 +128,7 @@
         <p><a class="font-size-16" href="member.html">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
         <ul>
           <li><a href="member.html">註冊/登入</a></li>
-          <li><a href="member_post.html">我要刊登</a></li>
+          <li><a href="member_post">我要刊登</a></li>
         </ul>
       </div> <!-- site-map-5 會員專區-->
       <div class="site-map-content col-md-1">

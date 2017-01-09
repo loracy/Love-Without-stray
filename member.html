@@ -44,12 +44,14 @@
   </header>
   
   <div class="container">
+
     <ol class="breadcrumb">
-      <li><a href="adopt.html">會員專區</a></li>
+      <li><a href="member.html">會員專區</a></li>
       <li class="active">註冊或登入</li>
     </ol> <!-- breadcrumb -->
-    <div class="member-signup-login col-md-offset-2">
-      <div class="member-signup col-md-4">
+    
+    <div class="member-signup-login">
+      <div class="member-signup col-md-4 col-md-offset-2 member-card-style">
         <div class="signup-title title">
           <p class="font-size-20">註冊 Sign Up</p>
         </div>
@@ -61,13 +63,13 @@
             <input type="text" name="email">
             <p class="font-size-16">你的密碼</p>
             <input type="password" name="password"><br>
-            <button type="" class="signup-btn">
+            <button type="" class="signup-btn member-btn-style">
               註冊
             </button>
           </form> <!-- signout-from -->
-        </div>
-      </div>
-      <div class="member-login col-md-4">
+        </div><!-- signup-content -->
+      </div><!-- member-signup -->
+      <div class="member-login col-md-4 member-card-style">
         <div class="login-title title">
           <p class="font-size-20">登入 Log In</p>
         </div>
@@ -77,21 +79,21 @@
             <input type="text" name="email">
             <p class="font-size-16">你的密碼</p>
             <input type="password" name="password"><br>
-            <div class="checkbox-remember">
+            <div class="checkbox-remember checkbox-style">
               <input type="checkbox" name="remember">記住密碼<br>
             </div>  
 
-            <button type=" " class="login-btn">
+            <button type=" " class="login-btn member-btn-style">
               登入
             </button>
           </form> <!-- login-from -->
           
-        </div>
-      </div>
+        </div><!-- login-content -->
+      </div><!-- member-login -->
      
-    </div>
+    </div><!-- member-signup-login -->
    
- </div>
+ </div> <!--container-->
 
   <footer class="container-fluid">
     <div class=""><a href="index.html">
@@ -123,10 +125,10 @@
         </ul>
       </div> <!-- site-map-4 關於我們-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="member.html">會員專區</a></p>
+        <p><a class="font-size-16" href="member.html">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
         <ul>
-          <li><a href="#註冊會員">註冊會員</a></li>
-          <li><a href="#我要刊登">我要刊登</a></li>
+          <li><a href="member.html">註冊/登入</a></li>
+          <li><a href="member_post.html">我要刊登</a></li>
         </ul>
       </div> <!-- site-map-5 會員專區-->
       <div class="site-map-content col-md-1">

@@ -12,11 +12,20 @@
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.member-signup{
-	padding-top: 20px;
-	padding-bottom: 20px;
+.member-card-style{
 	background-color: #fbf8f1;
 	border-radius: 15px;
+}
+.member-btn-style{
+	border-radius: 15px;
+	background-color: #dedacf;
+	font-size: 2em;
+    width: 4em;
+}
+.member-signup{
+	border-right: #dedacf 2px solid;
+    padding-top: 20px;
+	padding-bottom: 20px;
 }
 .signup-content p {
 	margin-top: 10px;
@@ -27,16 +36,12 @@
 }
 .signup-btn{
 	margin-top: 10px;
-	border-radius: 15px;
-	background-color: #dedacf;
-	font-size: 2em;
-    width: 4em;
 }
+
 .member-login{
+	border-left: #dedacf 2px solid;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: #fbf8f1;
-	border-radius: 15px;
 }
 .login-content p {
 	margin-top: 10px;
@@ -47,12 +52,8 @@
 }
 .login-btn{
 	margin-top: 38px;
-	border-radius: 15px;
-	background-color: #dedacf;
-	font-size: 2em;
-    width: 4em;
 }
-.checkbox-remember{
+.checkbox-style{
     margin-top: 20px;
     font-size: 1.6em;
 }
