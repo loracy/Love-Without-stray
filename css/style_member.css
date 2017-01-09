@@ -1,0 +1,69 @@
+.container{
+	margin-top: 130px;
+	margin-bottom: 110px;
+}
+.title{
+	background-color: #dedacf;
+	border-radius: 15px;
+	/*border:#c5c1b6 1px solid;*/
+	color: #777;
+}
+.title p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.member-signup{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fbf8f1;
+	border-radius: 15px;
+}
+.signup-content p {
+	margin-top: 10px;
+}
+.signup-content input{
+	border-radius: 5px;
+	font-size: 1.6em;
+}
+.signup-btn{
+	margin-top: 10px;
+	border-radius: 15px;
+	background-color: #dedacf;
+	font-size: 2em;
+    width: 4em;
+}
+.member-login{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fbf8f1;
+	border-radius: 15px;
+}
+.login-content p {
+	margin-top: 10px;
+}
+.login-content input{
+	border-radius: 5px;
+	font-size: 1.6em;
+}
+.login-btn{
+	margin-top: 38px;
+	border-radius: 15px;
+	background-color: #dedacf;
+	font-size: 2em;
+    width: 4em;
+}
+.checkbox-remember{
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+.breadcrumb{
+	background-color: unset;
+    text-align: left;
+}
+.breadcrumb li a{
+    font-size: 1em;
+    color: #a6836f;
+}
+.breadcrumb li{
+    font-size: 1.6em;
+}
