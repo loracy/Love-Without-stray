@@ -20,31 +20,33 @@ $(function(){
 	});
 //------------scroll-down----------------------
 	$('.glyphicon-chevron-down').click(function(){
-		// window.scrollTo(0,800);
+		// window.scrollTop(0,800);
 		$('body').animate({
 			scrollTop: 625
 		}, 600);
 	});
 // -------------adopt_dog---------------------
-    $('.dog').mouseover(function(){
-		$(this).html('<a href="adopt_dog.html"><img src="img/dog_hover.jpg"></a>');
+	$('.dog').mouseover(function(){
+		$('.dog-text').fadeIn();
 	});
 	$('.dog').mouseleave(function(){
-    	$(this).html('<img src="img/dog.jpg">');
+			$('.dog-text').fadeOut();
 	});
-	// $('.dog-hover-img').click(function(){
-	// 	window.location.href='adopt_dog.html';
-	// });
+	$('.dog').click(function(){
+		window.location.href='adopt_dog.html';
+	});
+
 // -------------adopt_cat---------------------
 	$('.cat').mouseover(function(){
-		$(this).html('<a href="adopt_cat.html"><img src="img/cat_hover.jpg"></a>');
+		$('.cat-text').fadeIn();
 	});
 	$('.cat').mouseleave(function(){
-    	$(this).html('<img src="img/cat.jpg">');
+    	$('.cat-text').fadeOut();
 	});
-	// $('.cat-hover-img').click(function(){
-	// 	window.location.href='adopt_cat.html';
-	// });
+	$('.cat').click(function(){
+		window.location.href='adopt_cat.html';
+	});
+
 //--------------adopt_dog_list---------------
     $('.pulse').mouseenter(function(){
         $(this).addClass("animated");
