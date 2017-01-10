@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/style_member.css">
@@ -14,8 +16,6 @@
 <script src="js/script_member.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
 <title>認養代替購買</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="member_post.html">我想刊登</a></li>
-          <li><a href="member.html">登出</a></li>
+          <li><a id="SignOut" href="member.html">登出</a></li>
           <li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>
 
         </ul>
@@ -55,27 +55,32 @@
           <p class="font-size-20">個人資料</p>
         </div> <!-- profile-title -->
         <div class="profile-content">
-          <p class="font-size-16">你的名字</p>
-          <p class="font-size-16">你的信箱</p>
+          <p style="color: #777;" class="font-size-16">你的名字</p>
+          <div class="user-name font-size-16">林亞儒</div>
+          <p style="color: #777;" class="font-size-16">你的信箱</p>
+          <div class="user-email font-size-12">lora860227@gmail.com</div>
+
+        </div><!-- profile-content -->
+        <div class="profile-btn">
           <button type="" class="edit-btn member-btn-style">
               編輯
           </button>
-        </div> <!-- profile-content -->
+        </div> <!-- profile-btn -->
       </div> <!--- profile -->
-      <div class="post col-md-8 member-card-style">
+      <div class="delete-or-upload col-md-8 member-card-style">
         <div class="post-title title">
           <p class="font-size-20">你刊登的動物照片/資訊</p>
         </div> <!-- post-title -->
         <div class="post-content col-md-12">
-          <div class="post-1 col-md-3">
+          <div class="post post-1 col-md-3">
             <img style="width: 100%;" src="img/dog-1.png"/>
-            <div class="post-content-checkbox checkbox-style">
+            <div class="post-content-checkbox-1 checkbox-style">
               <input type="checkbox" name="remember"> 2016 / 12 / 25<br>
             </div> 
           </div> <!--post-1-->
-          <div class="post-2 col-md-3">
+          <div class="post post-2 col-md-3">
             <img style="width: 100%;" src="img/dog-2.png"/>
-            <div class="post-content-checkbox checkbox-style">
+            <div class="post-content-checkbox-2 checkbox-style">
               <input type="checkbox" name="remember"> 2017 / 01 / 05<br>
             </div> 
           </div> <!--post-2--> 
@@ -84,9 +89,11 @@
           <button type="" class="delete-btn member-btn-style">
               刪除
           </button>
-          <button type="" class="upload-btn member-btn-style">
+          <button type="file" class="upload-btn member-btn-style" name="file" >
               新增
           </button> 
+          <div class="col-md-offset-11">
+          <input type="file" id="file" name="file" /></div>
         </div><!-- post-btn -->
       </div> <!-- post -->
     </div> <!--- member-post-->

@@ -16,6 +16,7 @@
 	background-color: #fbf8f1;
 	border-radius: 15px;
 }
+
 .member-btn-style{
 	border-radius: 15px;
 	background-color: #dedacf;
@@ -67,4 +68,39 @@
 }
 .breadcrumb li{
     font-size: 1.6em;
+}
+
+.post-title , .profile-title{
+	margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.post{
+	border-radius: 15px; 
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+.post-content{
+	height: 75%;
+}
+.profile{
+	border-right: #dedacf 2px solid;
+		height: 450px;
+}
+.delete-or-upload{
+	border-left: #dedacf 2px solid;
+	height: 450px;
+}
+.profile-content{
+	height: 75%;
+}
+.post-3{
+	display: none;
+}
+#file{
+	opacity: 0;
+	position: absolute;
+	bottom: 5%;
+}
+.user-name{
+	margin-bottom: 20px;
 }
