@@ -35,17 +35,21 @@ $(document).ready(function(){
     });
     promise.then(function(){
        console.log('LogIn User');
-       
-       //$('.test-email').html('<h1>login success</h1>');
        console.log("aaaaaaaaaaa");
+       window.location="member_post.html";
     });
   });
 
     // SignUp
     $btnSignUp.click(function(e){
+    // var user = firebase.auth().currentUser;
+
     const email = $signupemail.val();
     const pass = $signuppassword.val();
+    const name = $UserName.val(); 
     const auth = firebase.auth();
+    // const dbUserid = dbUser.child(user.uid);
+    // const $userName = $('#userName').val();
     // signUp
     const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(function(e){
@@ -58,15 +62,19 @@ $(document).ready(function(){
       const dbUserid = dbUser.child(user.uid);
       dbUserid.push({email:user.email});
        console.log("ggggg");
-       
+       window.location="member_post.html";
+       $('.user-name').html('fffddd');
+       $('.user-email').html(user.email);
     });
+
+    
   });
 
     // SignOut
     $SignOut.click(function(){
     firebase.auth().signOut();
     console.log('LogOut');
-    window.location.href='member.html';
+    window.location.href='index.html';
   });
 
 
@@ -119,12 +127,15 @@ $(document).ready(function(){
         if (x==0 && y==0) {
             $('.post-1').css('display','none');
             $('.post-2').css('display','none');
+            $('#post-number').html('0');
         }
         else if (x==1 && y==0) {
             $('.post-2').css('display','none');
+            $('#post-number').html('1');
         }
         else if (x==0 && y==1) {
             $('.post-1').css('display','none');
+            $('#post-number').html('1');
         }
     });
 });
