@@ -83,7 +83,7 @@ $(document).ready(function(){
 		// window.scrollTop(0,800);
 		$('body').animate({
 			scrollTop: 625
-		}, 600);
+		}, 1000);
 	});
 // -------------adopt_dog---------------------
 	$('.dog').mouseover(function(){
