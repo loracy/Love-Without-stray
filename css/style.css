@@ -276,6 +276,10 @@ footer{
 }
 /*------------size: xs--------------------------------*/
 @media screen and (max-width: 768px){
+
+	.step {
+		float: none;
+	}
     .hide-xs{
         display: none;
     }
@@ -286,6 +290,8 @@ footer{
         width: 90vw;
         height: 30px;
         font-size: 1.8em;
+				box-shadow: none;
+				padding: 0;
     }
     .font-size-42{
         font-size: 2.5em;
@@ -300,7 +306,27 @@ footer{
     right : 112px;*/
 
     }
-    .main_content_title{
-
+    .main {
+			background-color: #f0a671;
+			margin: 0;
+			padding-top: 70px !important;
+			padding-bottom: 20px !important;
     }
+
+		.main_content_link a {
+    text-decoration: underline;
+		font-weight: normal;
+    color: rgb(255, 226, 152);
+	}
+
+	.main_content_title {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	.font-size-42 {
+     font-size: 3.5em;
+		 color: #ffffff;
+		 font-weight: normal;
+}
 }
