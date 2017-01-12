@@ -47,7 +47,7 @@ $(document).ready(function(){
          window.location="member_login.html";
 
       });
-          
+
       $('#member-status-signup').click(function(){
          window.location="member_signup.html";
       });
@@ -55,7 +55,7 @@ $(document).ready(function(){
          window.location="member_login.html";
       });
 
-     
+
     }
   });
 
@@ -119,3 +119,11 @@ $(document).ready(function(){
     	window.location.href='adopt_dog_info.html';
     });
 });
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90241218-1', 'auto');
+  ga('send', 'pageview');
