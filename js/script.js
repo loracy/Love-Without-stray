@@ -9,7 +9,20 @@ $(document).ready(function(){
     };
     firebase.initializeApp(config);
 
-    // $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>');
+    // $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li><div class="search">
+  <script>
+(function() {
+var cx = '001247785949944523868:wrjw0tjjqpg';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<gcse:search></gcse:search>
+</div></li>');
     const $SignOut = $('#SignOut');
 
     // SignOut
@@ -25,7 +38,20 @@ $(document).ready(function(){
     if(user) {
       console.log(user);
       console.log('loginnnnnnnnnn');
-      $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>');
+      $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li><div class="search">
+  <script>
+(function() {
+var cx = '001247785949944523868:wrjw0tjjqpg';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<gcse:search></gcse:search>
+</div></li>');
       $('.member-status a').click(function(){
       	    window.alert("您以登入會員唷");
       	    window.location="index.html";
