@@ -307,7 +307,7 @@ footer{
 
     }
     .main {
-			background-color: #f0a671;
+			background-color: rgb(255, 226, 152);
 			margin: 0;
 			padding-top: 70px !important;
 			padding-bottom: 20px !important;
@@ -316,7 +316,7 @@ footer{
 		.main_content_link a {
     text-decoration: underline;
 		font-weight: normal;
-    color: rgb(255, 226, 152);
+
 	}
 
 	.main_content_title {
