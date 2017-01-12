@@ -28,14 +28,14 @@
         <ul class="nav navbar-nav navbar-left col-md-5">
           
           <li><a href="adopt.html">我想認養</a></li>
-          <li><a href="#認養須知">認養須知</a></li>
+          <li><a style="border-bottom: #a6836f 5px solid;color: #a6836f;" href="rules.html">認養須知</a></li>
           <li><a href="example.html">成功案例</a></li>
           <li><a href="about.html">關於我們</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="member.html">註冊</a></li>
-          <li><a href="member.html">登入</a></li>
+          <li><a href="member_signup.html">註冊</a></li>
+          <li><a href="member_login.html">登入</a></li>
           <li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>
 
         </ul>
@@ -44,36 +44,34 @@
     </div>
   </header>
   
-  <div class="container">
+  <div style="height: auto;" class="container">
+    <div class="col-md-8 col-md-offset-2 rules-card-style">
+      <div class="rules-title-1 title">
+          <p class="font-size-20">養寵物的基本條件</p>
+      </div>
+      <div class="rules-content">
+          <p class="font-size-16">1、有獨立經濟能力，年滿二十歲以上，若學生想領養，必須家裡支持</p>
+          <p class="font-size-16">2、必須同意犬貓成年後進行結紮手術</p>
+          <p class="font-size-16">3、需到合法獸醫處注射疫苗</p>
+          <p class="font-size-16">4、需得到家庭成員或同住人同意。</p>
+          <p class="font-size-16">5、必須按政府的規定進行晶片輸入。</p>
+      
+      </div><!-- rules-content -->
+      <div class="rules-title-2 title">
+          <p class="font-size-20">收養寵物後應該做到的事</p>
+      </div>
+      <div class="rules-content">
+          <p class="font-size-16">1、帶回家之後首先來個徹底的洗澡</p>
+          <p class="font-size-16">2、應少食多餐，餵食容易消化、營養均衡的飼料</p>
+          <p class="font-size-16">3、要用心去呵護它，搭個溫暖的小窩，增加它的安全感</p>
+          <p class="font-size-16">4、定期做到基本防疫:驅蟲、疫苗</p>
+      
+      </div><!-- rules-content -->
 
-    <ol class="breadcrumb">
-      <li><a href="member.html">認養須知</a></li>
-      <li class="active">認養前</li>
-    </ol> <!-- breadcrumb -->
-    <div class="note">
-      <img class="col-md-4 col-md-offset-4" src="img/note.svg">
-    </div class="col-md-12">
-    <div>
-    <div class="note-sm">
-      <img class="col-md-offset-11" src="img/note-sm.svg">
-
-      <div class="Q-1">請問你是笨蛋嗎</div>
     </div>
-    <div class="check col-md-1">
-      <img style="width: 100%;" src="img/icon-check.svg">
-    </div>
-    <div class="fail col-md-1">
-      <img style="width: 100%;" src="img/icon-fail.svg">
-    </div>
-    </div>
-
-
-    
-  
-    
-    
-   
- </div> <!--container-->
+    <button onclick="location.href='rules_test.html'"  style="font-size:30px;" class="rules-btn" href="adopt.html">    自我評估
+    </button>
+  </div> <!--container-->
 
   <footer class="container-fluid">
     <div class=""><a href="index.html">
@@ -88,10 +86,9 @@
         </ul>
       </div> <!-- site-map-1 我要認養-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="#認養須知">認養須知</a></p>
+        <p><a class="font-size-16" href="rules.html">認養須知</a></p>
         <ul>
-          <li><a href="#認養前">認養前</a></li>
-          <li><a href="#認養後">認養後</a></li>
+          <li><a href="rules_test.html">自我評估</a></li>
         </ul>
       </div> <!-- site-map-2 認養須知-->
       <div class="site-map-content col-md-1">
@@ -105,10 +102,10 @@
         </ul>
       </div> <!-- site-map-4 關於我們-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="member.html">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
+        <p><a class="font-size-16" href="#">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
         <ul>
-          <li><a href="member.html">註冊/登入</a></li>
-          <li><a href="member_post.html">我要刊登</a></li>
+          <li class="member-status"><a id="member-status-signup">註冊</a> / <a id="member-status-login">登入</a></li>
+          <li><a id="post">我要刊登</a></li>
         </ul>
       </div> <!-- site-map-5 會員專區-->
       <div class="site-map-content col-md-1">

@@ -1,13 +1,13 @@
 $(document).ready(function(){
     // Initialize Firebase
-    var config = {
-    apiKey: "AIzaSyAUkGTrJDJaRKC4AIy9-7Gds4D2UpWnoZI",
-    authDomain: "stray-member.firebaseapp.com",
-    databaseURL: "https://stray-member.firebaseio.com",
-    storageBucket: "stray-member.appspot.com",
-    messagingSenderId: "351649287997"
-    };
-    firebase.initializeApp(config);
+    // var config = {
+    // apiKey: "AIzaSyAUkGTrJDJaRKC4AIy9-7Gds4D2UpWnoZI",
+    // authDomain: "stray-member.firebaseapp.com",
+    // databaseURL: "https://stray-member.firebaseio.com",
+    // storageBucket: "stray-member.appspot.com",
+    // messagingSenderId: "351649287997"
+    // };
+    // firebase.initializeApp(config);
 
     var dbUser = firebase.database().ref().child('user');
     var storageRef = firebase.storage().ref();

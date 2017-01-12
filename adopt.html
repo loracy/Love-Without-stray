@@ -11,6 +11,8 @@
   <link type="text/css" rel="stylesheet" href="css/style_adopt_other.css">
   <script src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
   <title>認養代替購買</title>
   </head>
 <body>
@@ -22,14 +24,14 @@
         <ul class="nav navbar-nav navbar-left col-md-5">
 
           <li><a style="border-bottom: #a6836f 5px solid;color: #a6836f;" href="adopt.html">我想認養</a></li>
-          <li><a href="#認養須知">認養須知</a></li>
+          <li><a href="rules.html">認養須知</a></li>
           <li><a href="example.html">成功案例</a></li>
           <li><a href="about.html">關於我們</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="member.html">註冊</a></li>
-          <li><a href="member.html">登入</a></li>
+          <li><a href="member_signup.html">註冊</a></li>
+          <li><a href="member_login.html">登入</a></li>
           <li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>
 
         </ul>
@@ -67,10 +69,9 @@
         </ul>
       </div> <!-- site-map-1 我要認養-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="#認養須知">認養須知</a></p>
+        <p><a class="font-size-16" href="rules.html">認養須知</a></p>
         <ul>
-          <li><a href="#認養前">認養前</a></li>
-          <li><a href="#認養後">認養後</a></li>
+          <li><a href="rules_test.html">自我評估</a></li>
         </ul>
       </div> <!-- site-map-2 認養須知-->
       <div class="site-map-content col-md-1">
@@ -84,10 +85,10 @@
         </ul>
       </div> <!-- site-map-4 關於我們-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="member.html">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
+        <p><a class="font-size-16" href="#">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
         <ul>
-          <li><a href="member.html">註冊/登入</a></li>
-          <li><a href="member_post.html">我要刊登</a></li>
+          <li class="member-status"><a id="member-status-signup">註冊</a> / <a id="member-status-login">登入</a></li>
+          <li><a id="post">我要刊登</a></li>
         </ul>
       </div> <!-- site-map-5 會員專區-->
       <div class="site-map-content col-md-1">
