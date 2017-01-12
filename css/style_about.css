@@ -1,0 +1,155 @@
+.row {
+  height: 100%;
+}
+
+/*section1*/
+
+.section1{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.sec1up {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 60%;
+  top:0;
+}
+
+#sec1bgvd {
+  padding: 0;
+  margin-left: -3%;
+  position: fixed;
+  z-index: -99;
+  top: -10px;
+  width: 107%;
+  height: 107%;
+}
+
+.sec1down {
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  background-color: #fec267;
+  padding-top: 30px;
+  text-align: center;
+  color: #ad6f4b;
+}
+
+.Big-title {
+  font-weight: normal;
+  text-shadow: 1px 1px 3px #494949;
+  color: #ffffff;
+  font-size: 6em;
+  line-height: 8em;
+  text-align: center;
+}
+
+.page-botton {
+  padding-top: 3%;
+}
+
+/*section2*/
+
+.section2{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0ede6;
+}
+
+.sec2-pic, .sec2-content, .sec2-connect, .page-botton2 {
+  position: absolute;
+}
+
+.sec2-pic {
+  /*padding: 0;*/
+  padding-top: 8%;
+  right: 20%;
+  opacity: 0;
+}
+
+.sec2-pic> #dog {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.sec2-content {
+  color: #6b6b6b;
+  text-shadow: 1px 1px 3px #939393;
+  top: 20%;
+
+}
+
+.sec2-content> .about {
+  line-height: 80px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin-left: 30px;
+  opacity: 0;
+}
+
+.sec2-connect {
+  top: 73%;
+  opacity: 0;
+}
+
+.sec2-connect img {
+  box-shadow: 0px 1px 10px rgb(60, 60, 60);
+  border-radius: 50%;
+  width: 100%;
+}
+
+.page-botton2 {
+  padding: 0;
+  color: #595959;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  display: none;
+}
+
+/*section3*/
+
+.section3 {
+  height: 70vh;
+  width: 100%;
+  background-color: rgb(255, 140, 66);
+}
+
+.sec3-text {
+  text-align: center;
+  padding-top: 2em;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  font-size: 5em;
+  color: white;
+  opacity: 0;
+  text-shadow: 0px 1px rgb(57, 57, 57);
+}
+
+.sec3-button {
+  text-align: center;
+  display: none;
+}
+
+.btn {
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px rgb(237, 91, 9);
+}
+
+.btn:hover {
+    background-color: rgb(255, 205, 119);
+}
+
+.btn-danger {
+border-width: 0px;
+}
+
+/*#cat1, #cat2 {
+  display: none;
+}*/

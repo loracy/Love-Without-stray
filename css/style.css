@@ -64,7 +64,8 @@ header a {
     height: 80%;
 }
 .search{
-    margin-top: -4px;
+	width: 200px;
+  margin-top: -4px;
 }
 /*-------------main-------------------*/
 .main{
