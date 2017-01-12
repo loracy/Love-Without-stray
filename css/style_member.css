@@ -2,10 +2,10 @@
 	margin-top: 130px;
 	margin-bottom: 110px;
 }
+/*-----------style-------------------*/
 .title{
 	background-color: #dedacf;
 	border-radius: 15px;
-	/*border:#c5c1b6 1px solid;*/
 	color: #777;
 }
 .title p{
@@ -16,48 +16,30 @@
 	background-color: #fbf8f1;
 	border-radius: 15px;
 }
-
 .member-btn-style{
 	border-radius: 15px;
 	background-color: #dedacf;
 	font-size: 2em;
     width: 4em;
+    border: unset;
+    box-shadow: 0px 3px 3px rgba(20%,20%,40%,0.5);
 }
-.member-signup{
-	border-right: #dedacf 2px solid;
-    padding-top: 20px;
-	padding-bottom: 20px;
+.member-btn-style:hover{
+    box-shadow: 0px 2px 3px rgba(20%,20%,40%,0.5);
 }
-.signup-content p {
-	margin-top: 10px;
+.member-btn-style:active{
+    background-color: #b4b1a7;
+    color: #ffffff;
+    box-shadow: unset;
 }
-.signup-content input{
-	border-radius: 5px;
-	font-size: 1.6em;
-}
-.signup-btn{
-	margin-top: 10px;
-}
-
-.member-login{
-	border-left: #dedacf 2px solid;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-.login-content p {
-	margin-top: 10px;
-}
-.login-content input{
-	border-radius: 5px;
-	font-size: 1.6em;
-}
-.login-btn{
-	margin-top: 38px;
+.member-btn-style:visited{
+    color:unset;
 }
 .checkbox-style{
     margin-top: 20px;
     font-size: 1.6em;
 }
+/*-----------breadcrumb---------------*/
 .breadcrumb{
 	background-color: unset;
     text-align: left;
@@ -70,6 +52,47 @@
     font-size: 1.6em;
 }
 
+/*----------------signup---------------*/
+.member-signup{
+	border: #dedacf 2px solid;
+    padding-top: 20px;
+	padding-bottom: 20px;
+}
+.signup-content p {
+	margin-top: 10px;
+}
+.signup-btn{
+	margin-top: 40px;
+}
+#UserName ,#signup-password, #signup-email{
+	border-radius: 20px;
+	text-align: center;
+	font-size: 1.6em;
+}
+.signup-title{
+	margin-bottom: 40px;
+}
+/*----------------login--------------------*/
+.member-login{
+	border-left: #dedacf 2px solid;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.login-content p {
+	margin-top: 10px;
+}
+.login-btn{
+	margin-top: 40px;
+}
+#login-email, #login-password {
+	border-radius: 20px;
+	font-size: 1.6em;
+	text-align: center;
+}
+.login-title{
+	margin-bottom: 40px;
+}
+/*------------member_post---------------*/
 .post-title , .profile-title{
 	margin-top: 20px;
     margin-bottom: 20px; 
@@ -82,25 +105,24 @@
 .post-content{
 	height: 75%;
 }
+/*---------------左邊個人資料---------*/
 .profile{
 	border-right: #dedacf 2px solid;
-		height: 450px;
-}
-.delete-or-upload{
-	border-left: #dedacf 2px solid;
 	height: 450px;
 }
 .profile-content{
 	height: 75%;
 }
-.post-3{
-	display: none;
+.user-email , .user-name{
+	margin-bottom: 35px;
+}
+/*--------------右邊刪除或新增----------*/
+.delete-or-upload{
+	border-left: #dedacf 2px solid;
+	height: 450px;
 }
 #file{
 	opacity: 0;
 	position: absolute;
 	bottom: 5%;
-}
-.user-name{
-	margin-bottom: 20px;
-}
+} /*隱藏上傳資料*/
