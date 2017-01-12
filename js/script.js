@@ -126,4 +126,6 @@ $(document).ready(function(){
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-90241218-1', 'auto');
+  ga(‘require’, ‘displayfeatures’);
+  ga(‘require’, ‘linkid’, ‘linkid.js’);
   ga('send', 'pageview');
