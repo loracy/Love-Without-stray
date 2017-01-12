@@ -9,20 +9,6 @@ $(document).ready(function(){
     };
     firebase.initializeApp(config);
 
-    // $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li><div class="search">
-  <script>
-(function() {
-var cx = '001247785949944523868:wrjw0tjjqpg';
-var gcse = document.createElement('script');
-gcse.type = 'text/javascript';
-gcse.async = true;
-gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-<gcse:search></gcse:search>
-</div></li>');
     const $SignOut = $('#SignOut');
 
     // SignOut
@@ -37,21 +23,8 @@ s.parentNode.insertBefore(gcse, s);
     var use =firebase.auth().currentUser;
     if(user) {
       console.log(user);
-      console.log('loginnnnnnnnnn');
-      $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li><div class="search">
-  <script>
-(function() {
-var cx = '001247785949944523868:wrjw0tjjqpg';
-var gcse = document.createElement('script');
-gcse.type = 'text/javascript';
-gcse.async = true;
-gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-<gcse:search></gcse:search>
-</div></li>');
+      console.log('loginnnnnnnnnn');      
+      $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li><div class="search"><script>(function() {var cx = \'001247785949944523868:wrjw0tjjqpg\';var gcse = document.createElement(\'script\');gcse.type = \'text/javascript\';gcse.async = true;gcse.src = \'https://cse.google.com/cse.js?cx=\' + cx;var s = document.getElementsByTagName(\'script\')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:search></gcse:search></div></li>');      
       $('.member-status a').click(function(){
       	    window.alert("您以登入會員唷");
       	    window.location="index.html";
@@ -146,12 +119,3 @@ s.parentNode.insertBefore(gcse, s);
     });
 });
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90241218-1', 'auto');
-  ga(‘require’, ‘displayfeatures’);
-  ga(‘require’, ‘linkid’, ‘linkid.js’);
-  ga('send', 'pageview');

@@ -16,11 +16,12 @@
 </head>
 <body>
   <header class="navbar-fixed-top container-fluid">
-
+    
     <nav class="navbar navbar-default">
+        <div class="show-sm"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <a class="col-md-1 logo" href="index.html"><img src="img/logo.png"/></a>
-        <ul class="nav navbar-nav navbar-left col-md-5">
+        <a class="col-md-1  logo" href="index.html"><img src="img/logo.png"/></a>
+        <ul class="nav navbar-nav navbar-left col-md-5 hide-sm">
 
           <li><a href="adopt.html">我想認養</a></li>
           <li><a href="#認養須知">認養須知</a></li>
@@ -28,39 +29,27 @@
           <li><a href="about.html">關於我們</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right hide-sm">
           <li><a href="member_signup.html">註冊</a></li>
           <li><a href="member_login.html">登入</a></li>
-          <li><div class="search">
-  <script>
-(function() {
-var cx = '001247785949944523868:wrjw0tjjqpg';
-var gcse = document.createElement('script');
-gcse.type = 'text/javascript';
-gcse.async = true;
-gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-<gcse:search></gcse:search>
-</div></li>
+          <li><div class="search"><script>(function() {var cx = '001247785949944523868:wrjw0tjjqpg';var gcse = document.createElement('script');gcse.type = 'text/javascript';gcse.async = true;gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse, s);})();</script><gcse:search></gcse:search></div></li>
 
         </ul>
         </div>
+         <div class="show-sm"><span class="glyphicon glyphicon-user"></span></div>
     </nav>
-    </div>
+   
   </header>
 
   <div class="container-fluid">
   <div class="row">
     <div class="col-md-12 main" style="padding: 0px">
-      <div class="main-img">
+      <div class="main-img hide-xs">
         <img src="img/main-img.png"/>
       </div>
       <div class="main_content">
-        <p class="main_content_title font-size-42">零棄養 零購買 給他們一個家</p>
-        <p class="main_content_paragraph font-size-18">全台灣約有200萬隻流浪動物，且數字一直沒有減少<br>且未絕育率高達50.6%，也就是說流浪的情況只會越來越嚴重<br>而罪魁禍首就來自人類隨地棄養家狗<br>從現在開始就以領養代替購買</p>
+        <p class="main_content_title font-size-42">零棄養 零購買 <span class="show-xs"><br></span>給他們一個家</p>
+        <p class="main_content_paragraph font-size-18">全台灣約有200萬隻流浪動物，<span class="show-xs"><br></span>且數字一直沒有減少<br>且未絕育率高達50.6%，<span class="show-xs"><br></span>也就是說流浪的情況只會越來越嚴重<br>而罪魁禍首就來自人類隨地棄養家狗<br>從現在開始就以領養代替購買</p>
         <p class="main_content_link"><a class="font-size-18" href="rules.html">在開始認養之前，你應該知道的事</a></p>
         <button type="button" class="btn"> 認 養
         </button>
@@ -69,7 +58,7 @@ s.parentNode.insertBefore(gcse, s);
     </div> <!-- row -->
     <div class="row">
       <div style="position: absolute;bottom:30px;color: #ffffff;"class="icon-down col-md-12">
-        <span class="glyphicon glyphicon-chevron-down"></span>
+        <span class="glyphicon glyphicon-chevron-down hide-sm"></span>
       </div>
     </div>
   </div><!--  container-fluid -->
@@ -78,21 +67,21 @@ s.parentNode.insertBefore(gcse, s);
   <div class="container">
     <p class="font-size-30 steps-title">認養三步驟</p>
     <div class="steps">
-      <div class="step step-1 col-md-offset-1">
+      <div class="step step-1 col-md-offset-1 col-sm-offset-1 col-sm-3">
         <img src="img/step-1-img.png"/>
         <p class="font-size-18">確定自己是否做好準備了</p>
       </div> <!-- step-1 -->
-      <div class="step icon-right">
+      <div class="step icon-right hide-xs">
         <span class="glyphicon glyphicon-chevron-right font-size-30"></span>
       </div>
-      <div class="step step-2">
+      <div class="step step-2 col-sm-3">
         <img src="img/step-2-img.png"/>
         <p class="font-size-18">尋找你的寵物夥伴</p>
       </div><!-- step-2 -->
-      <div class="step icon-right">
+      <div class="step icon-right hide-xs">
         <span class="glyphicon glyphicon-chevron-right font-size-30"></span>
       </div>
-      <div class="step step-3">
+      <div class="step step-3 col-sm-3">
         <img src="img/step-3-img.png"/>
         <p class="font-size-18">付諸行動和他相伴一生</p>
       </div> <!-- step-3 -->
@@ -100,10 +89,10 @@ s.parentNode.insertBefore(gcse, s);
   </div> <!-- container -->
 
   <footer class="container-fluid">
-    <div class=""><a href="index.html">
-      <img class="col-md-1" src="img/logo.png"/></a>
+    <div class="col-md-1 hide-sm"><a href="index.html">
+      <img style="width: 100%;" src="img/logo.png"/></a>
     </div>
-    <div class="site-map">
+    <div class="site-map hide-sm">
       <div class="site-map-content col-md-1">
         <p><a class="font-size-16" href="adopt.html">我要認養</a></p>
         <ul>

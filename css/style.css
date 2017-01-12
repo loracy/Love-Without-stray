@@ -7,6 +7,12 @@ body{
 		width: 100%;
     background-color: #f0ede6;
 }
+.show-sm{
+    display: none;
+}
+.show-xs{
+    display: none;
+}
 /*---------------style----------------*/
 .font-size-42{
     font-size: 4.2em;
@@ -189,13 +195,112 @@ footer{
     font-size: 1.2em;
 }
 
+.glyphicon{
+    color: #a6836f;
+}
+.glyphicon-user{
+    float: right;
+    font-size: 2.5em;
+    margin-top: 2%;
+}
+.glyphicon-menu-hamburger{
+    float:left;
+    font-size: 2.5em;
+    margin-top: 2%;
+}
 /*RWD*/
 /*------------size:sm----------------------------------*/
 @media screen and (max-width: 992px){
+    .hide-sm{
+        display: none;
+    }
+    .show-sm{
+        display: inline;
+    }
+    .text-right{
+        text-align: center!important;
+    }
+    .text-right .social-icon{
+        text-align: center!important;
+    }
+    .navbar-collapse{
+        float: left;
+        margin-left: 42.5%;
+    }
+    /*------------------main-----------------*/
+    .main_content{
+    position: absolute;
+    top : 80px;
+    right : 5%;
+    direction: rtl;
+    color:#333;
+    }
+    .main_content_title{
+        margin-bottom: 30px;
+    }
+    .main_content_paragraph{
+        margin-bottom: 30px;
+    }
+    .main_content_link{
+        margin-bottom: 10px;
+    }
 
+    .btn{
+        width: 120px;
+        height: 40px;
+        font-size: 1.8em;
+    }
+    .font-size-42{
+        font-size: 3.5em;
+    }
+    .font-size-18{
+        font-size: 1.6em;
+    }
+    /*-------------steps-------------------*/
+    .container{
+        margin-bottom: 35px;
+    }
+    .steps-title{
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .icon-right{
+    height: 150px;
+    line-height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    .step img{
+        width: 100%;
+    }
 }
 /*------------size: xs--------------------------------*/
 @media screen and (max-width: 768px){
+    .hide-xs{
+        display: none;
+    }
+    .show-xs{
+        display: inline;
+    }
+    .btn{
+        width: 90vw;
+        height: 30px;
+        font-size: 1.8em;
+    }
+    .font-size-42{
+        font-size: 2.5em;
+    }
+    .font-size-18{
+        font-size: 1.2em;
+    }
+    .main_content{
+        position: unset;
+        text-align: center;
+/*    top : 130px;
+    right : 112px;*/
 
+    }
+    .main_content_title{
 
+    }
 }
