@@ -4,7 +4,7 @@ $(document).ready(function(){
     	$('.rules-berfore-initial img').slideToggle(500);},2000)
     setTimeout(function(){
     	$('.note ').css('display','block');
-        $('.note ').animate({left: '-650px'});
+        $('.note img').animate({left: '-650px'});
         $('.Q-1').fadeToggle(900);},4000)
 
     var Ncheck = 0;
@@ -87,26 +87,26 @@ $(document).ready(function(){
     	$('.Q-5').fadeOut(500);
         $('.question-result').fadeIn(900);
 
-        if (Ntotal == 100) { 
+        if (Ntotal == 100) {
         	setTimeout(function(){
             $('.question-result').fadeOut(900);
         	$('.question-suggest').html('太棒了 !<br>你是滿分的主人<br>快去領養寵物吧 !<br> <button onclick="location.href=\'adopt.html\'" style="font-size:30px;" class="rules-btn" href="adopt.html">認養</button>');
         	$('.question-suggest').fadeIn(900);},3000)}
-    
-        if (Ntotal <= 80 && Ntotal >= 60) { 
+
+        if (Ntotal <= 80 && Ntotal >= 60) {
         	setTimeout(function(){
             $('.question-result').fadeOut(900);
         	$('.question-suggest').html('還不錯耶<br>相信你會是很棒的主人<br>快去領養寵物吧 !<br> <button onclick="location.href=\'adopt.html\'" style="font-size:30px;" class="rules-btn" href="adopt.html">認養</button>');
         	$('.question-suggest').fadeIn(900);},3000)}
 
-         if (Ntotal <= 40 && Ntotal >= 20) { 
+         if (Ntotal <= 40 && Ntotal >= 20) {
         	setTimeout(function(){
             $('.question-result').fadeOut(900);
         	$('.question-suggest').html('嗯...<br>你可能還沒準備好<br>做好功課再來領養喔 !');
-        	$('.question-suggest').fadeIn(900);},3000)}	
-    
-        },1000)	
-        
+        	$('.question-suggest').fadeIn(900);},3000)}
+
+        },1000)
+
     });
     $('#fail-5').click(function(){
         $(this).html('<img class="answer-icon-fail" style="width: 40%;" src="img/icon-fail-clicked.svg">');
@@ -116,32 +116,32 @@ $(document).ready(function(){
         setTimeout(function(){
     	$('.Q-5').fadeOut(500);
         $('.question-result').fadeIn(900);
-    
-        if (Ntotal <= 80 && Ntotal >= 60) { 
+
+        if (Ntotal <= 80 && Ntotal >= 60) {
         	setTimeout(function(){
             $('.question-result').fadeOut(900);
         	$('.question-suggest').html('還不錯耶<br>相信你會是很棒的主人<br>快去領養寵物吧 !<br> <button onclick="location.href=\'adopt.html\'"  style="font-size:30px;" class="rules-btn" href="adopt.html">認養</button>');
         	$('.question-suggest').fadeIn(900);},3000)}
 
-         if (Ntotal <= 40 && Ntotal >= 20) { 
+         if (Ntotal <= 40 && Ntotal >= 20) {
         	setTimeout(function(){
             $('.question-result').fadeOut(900);
         	$('.question-suggest').html('嗯...<br>你可能還沒準備好<br>做好功課再來領養喔 !');
-        	$('.question-suggest').fadeIn(900);},3000)}	
+        	$('.question-suggest').fadeIn(900);},3000)}
 
-        if (Ntotal == 0) { 
+        if (Ntotal == 0) {
         	setTimeout(function(){
             $('.question-result').fadeOut(900);
         	$('.question-suggest').html('天啊 !<br>你可以不要來鬧嗎 ?<br>千萬不要領養寵物 !');
-        	$('.question-suggest').fadeIn(900);},3000)}	
+        	$('.question-suggest').fadeIn(900);},3000)}
 
         },1000)
-        
-        
+
+
     });
 
 
 
-    
+
 
 });

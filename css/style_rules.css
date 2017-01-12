@@ -43,10 +43,10 @@
  /*-------------note-------------*/
  .note {
  	display: none;
- 	position: relative;
  }
   .note img{
  	float: left;
+	 	position: relative;
  }
  /*-------------Questions--------------*/
 
@@ -57,8 +57,8 @@
  	top: 43%;
  	left: 39%;
  	font-size: 3em;
- 	width: 360px;
- }
+	width: 25%;
+  }
  .question-result-score{
  	font-size: 3em;
  }
@@ -98,5 +98,3 @@
 .rules-btn:visited{
     color:unset;
 }
-
- 
