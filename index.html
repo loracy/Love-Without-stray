@@ -9,6 +9,8 @@
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <script src="js/script.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 <title>認養代替購買</title>
 </head>
 <body>
@@ -45,7 +47,7 @@
       <div class="main_content">
         <p class="main_content_title font-size-42">零棄養 零購買 給他們一個家</p>
         <p class="main_content_paragraph font-size-18">全台灣約有200萬隻流浪動物，且數字一直沒有減少<br>且未絕育率高達50.6%，也就是說流浪的情況只會越來越嚴重<br>而罪魁禍首就來自人類隨地棄養家狗<br>從現在開始就以領養代替購買</p>
-        <p class="main_content_link"><a class="font-size-18" href="#認養須知">在開始認養之前，你應該知道的事</a></p>
+        <p class="main_content_link"><a class="font-size-18" href="rules.html">在開始認養之前，你應該知道的事</a></p>
         <button type="button" class="btn"> 認 養
         </button>
       </div> <!-- main-content  -->
@@ -96,10 +98,9 @@
         </ul>
       </div> <!-- site-map-1 我要認養-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="#認養須知">認養須知</a></p>
+        <p><a class="font-size-16" href="rules.html">認養須知</a></p>
         <ul>
-          <li><a href="#認養前">認養前</a></li>
-          <li><a href="#認養後">認養後</a></li>
+          <li><a href="rules_test.html">自我評估</a></li>
         </ul>
       </div> <!-- site-map-2 認養須知-->
       <div class="site-map-content col-md-1">
@@ -113,10 +114,10 @@
         </ul>
       </div> <!-- site-map-4 關於我們-->
       <div class="site-map-content col-md-1">
-        <p><a class="font-size-16" href="member.html">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
+        <p><a class="font-size-16" href="#">會員專區</a></p><!--if登入會員{href="member_post.html"};if登出 {href="member.html"}-->
         <ul>
-          <li><a href="member.html">註冊/登入</a></li>
-          <li><a href="member_post.html">我要刊登</a></li>
+          <li class="member-status"><a id="member-status-signup">註冊</a> / <a id="member-status-login">登入</a></li>
+          <li><a id="post">我要刊登</a></li>
         </ul>
       </div> <!-- site-map-5 會員專區-->
       <div class="site-map-content col-md-1">

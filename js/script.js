@@ -1,4 +1,64 @@
-$(function(){
+$(document).ready(function(){
+	// Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyAUkGTrJDJaRKC4AIy9-7Gds4D2UpWnoZI",
+    authDomain: "stray-member.firebaseapp.com",
+    databaseURL: "https://stray-member.firebaseio.com",
+    storageBucket: "stray-member.appspot.com",
+    messagingSenderId: "351649287997"
+    };
+    firebase.initializeApp(config);
+
+    // $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>');
+    const $SignOut = $('#SignOut');
+
+    // SignOut
+    $SignOut.click(function(){
+    firebase.auth().signOut();
+    console.log('LogOut');
+    window.location.href='index.html';
+  });
+
+    // Listening Login User
+  firebase.auth().onAuthStateChanged(function(user){
+    var use =firebase.auth().currentUser;
+    if(user) {
+      console.log(user);
+      console.log('loginnnnnnnnnn');
+      $('.navbar-right').html('<li><a href="member_post.html">我想刊登</a></li><li><a id="SignOut" href="index.html">登出</a></li><li class="search"><a href="#search"><span class="glyphicon glyphicon-search font-size-16"></span></a></li>');
+      $('.member-status a').click(function(){
+      	    window.alert("您以登入會員唷");
+      	    window.location="index.html";
+      	});
+      $('#SignOut').click(function(){
+    		window.alert("確定要登出嗎?");
+    		firebase.auth().signOut();
+            console.log('LogOut');
+            window.location.href='index.html';
+    	});
+      $('#post').click(function(){
+         window.location="member_post.html";
+         });
+
+    } else if(!user){
+      console.log("not logged in");
+      $('#post').click(function(){
+         window.alert("請先登入或註冊!");
+         window.location="member_login.html";
+
+      });
+          
+      $('#member-status-signup').click(function(){
+         window.location="member_signup.html";
+      });
+      $('#member-status-login').click(function(){
+         window.location="member_login.html";
+      });
+
+     
+    }
+  });
+
 	$('.social-icon img').mouseenter(function(){
 		$(this).css("background-color","#a6836f");
 		$(this).css("border-radius","30px");
@@ -10,7 +70,7 @@ $(function(){
         window.location.href='adopt.html';
 	});
 	$('.step-1').click(function(){
-        window.location.href='#';
+        window.location.href='rules_test.html';
 	});
 	$('.step-2').click(function(){
         window.location.href='adopt.html';
